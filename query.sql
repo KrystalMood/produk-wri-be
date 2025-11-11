@@ -29,7 +29,7 @@ CREATE TABLE detail_penjualan (
     id_produk INT(11),
     jumlah INT(11) NOT NULL,
     subtotal DECIMAL(10,2) NOT NULL,
-    PRIMARY KEY (id_penjualan, id_barang),
+    PRIMARY KEY (id_penjualan, id_produk),
     FOREIGN KEY (id_penjualan) REFERENCES penjualan(id_penjualan),
     FOREIGN KEY (id_produk) REFERENCES produk(id_produk)
 );
